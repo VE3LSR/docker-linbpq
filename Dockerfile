@@ -18,3 +18,5 @@ RUN cd HTML; wget http://www.cantab.net/users/john.wiseman/Downloads/Beta/HTMLPa
 # Add BPQAPR Pages
 RUN mkdir /opt/linbpq/BPQAPRS
 RUN cd BPQAPRS; wget http://www.cantab.net/users/john.wiseman/Documents/Samples/APRSHTML.zip; unzip APRSHTML.zip; rm APRSHTML.zip
+
+ENTRYPOINT ./start.sh

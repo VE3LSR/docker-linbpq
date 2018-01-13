@@ -2,9 +2,6 @@
 
 source docker-vars.sh
 
-rm BPQNODES.dat; touch BPQNODES.dat
-rm logs
-
 sudo docker rm $APP
 sudo docker run -it \
     --name $APP \
