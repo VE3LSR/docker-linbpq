@@ -1,10 +1,13 @@
-version: "2"
+version: "3"
 services:
   linbpq:
     image: ve3lsr/docker-linbpq
     restart: always
     ports:
       - 8081:80
+    devices:
+      # Map devices from the host into the container
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
     volumes:
       - [LOCALDIR]/bpq32.cfg:/opt/linbpq/bpq32.cfg
       - [LOCALDIR]/BPQNODES.dat:/opt/linbpq/BPQNODES.dat
