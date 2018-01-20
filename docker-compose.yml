@@ -11,4 +11,4 @@ services:
     volumes:
       - [LOCALDIR]/bpq32.cfg:/opt/linbpq/bpq32.cfg
       - [LOCALDIR]/BPQNODES.dat:/opt/linbpq/BPQNODES.dat
-      - [LOCALDIR]/docker-linbpq/logs:/opt/linbpq/logs \
+      - [LOCALDIR]/docker-linbpq/logs:/opt/linbpq/logs
