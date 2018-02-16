@@ -2,6 +2,7 @@ version: "3"
 services:
   linbpq:
     image: ve3lsr/docker-linbpq
+    build: .
     restart: always
     ports:
       - 8081:80
