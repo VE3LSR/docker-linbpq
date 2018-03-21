@@ -20,6 +20,6 @@ RUN mkdir /opt/linbpq/BPQAPRS
 RUN cd BPQAPRS; wget http://www.cantab.net/users/john.wiseman/Documents/Samples/APRSHTML.zip; unzip APRSHTML.zip; rm APRSHTML.zip
 
 # allrf parsing has a buffer size bug. We're overloading the one that comes from John
-ADD overwrite/allrf.html /opt/linbpq/BPQAPRS
+ADD overwrite/allrf.html /opt/linbpq/BPQAPRS/HTML/allrf.html
 
 ENTRYPOINT ./start.sh
