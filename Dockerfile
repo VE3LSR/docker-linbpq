@@ -1,4 +1,4 @@
-FROM ubuntu:yakkety
+FROM ubuntu:xenial
 MAINTAINER projects@ve3lsr.ca
 
 RUN apt-get update && apt-get install -yq wget unzip libcap2-bin lib32z1 && apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
