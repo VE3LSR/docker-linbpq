@@ -1,7 +1,7 @@
 version: "3"
 services:
   linbpq:
-    image: ve3lsr/docker-linbpq
+    image: ve3lsr/linbpq
     build: .
     restart: always
     ports:
